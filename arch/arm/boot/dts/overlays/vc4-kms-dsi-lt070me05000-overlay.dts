@@ -32,7 +32,7 @@
 				compatible    = "jdi,lt070me05000";
 				status        = "okay";
 				reg           = <0>;
-				reset-gpios   = <&gpio 17 1>;   // LCD RST
+				reset-gpios   = <&gpio 18 1>;   // LCD RST
 				enable-gpios  = <&gpio 4 0>;    // LCD Enable
 				dcdc-en-gpios = <&gpio 5 0>;    // LCD DC-DC Enable
 				port {
@@ -48,7 +48,7 @@
 		target = <&gpio>;
 		__overlay__ {
 			lt070me05000_pins: lt070me05000_pins {
-				brcm,pins = <4 5 17>;
+				brcm,pins = <4 5 18>;
 				brcm,function = <1 1 1>; // out
 				brcm,pull = <0 0 0>; // off
 			};
